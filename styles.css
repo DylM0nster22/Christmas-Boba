@@ -1,0 +1,290 @@
+body {
+  background: linear-gradient(
+    45deg,
+    #1a472a,
+    #2a6843,
+    #143d24,
+    #0f2b1a
+  );
+  background-size: 400% 400%;
+  animation: aurora 15s ease infinite;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  overflow: hidden;
+}
+
+@keyframes aurora {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+
+/* Cool decorative elements */
+.ornament {
+  position: fixed;
+  font-size: 2rem;
+  color: gold;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+/* Many more star positions */
+.o1 { top: 10%; left: 10%; }
+.o2 { top: 20%; right: 15%; }
+.o3 { top: 40%; left: 20%; }
+.o4 { top: 60%; right: 25%; }
+.o5 { top: 80%; left: 15%; }
+.o6 { top: 15%; left: 30%; }
+.o7 { top: 25%; right: 40%; }
+.o8 { top: 45%; left: 85%; }
+.o9 { top: 75%; right: 35%; }
+.o10 { top: 5%; left: 50%; }
+.o11 { top: 35%; left: 75%; }
+.o12 { top: 55%; right: 80%; }
+.o13 { top: 85%; left: 25%; }
+.o14 { top: 30%; right: 60%; }
+.o15 { top: 70%; left: 40%; }
+.o16 { top: 90%; right: 15%; }
+.o17 { top: 15%; left: 65%; }
+.o18 { top: 50%; right: 45%; }
+.o19 { top: 65%; left: 55%; }
+.o20 { top: 95%; right: 70%; }
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+.santa-speech {
+    position: absolute;
+    top: 20px;  /* Changed from -40px to move down */
+    right: 200px;  /* Changed from -30px to move left */
+    background: white;
+    color: red;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+
+
+.santa-speech:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: white transparent;
+}
+
+/* Festive message */
+.message {
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px;
+    line-height: 1.8;
+    text-shadow: 0 0 8px rgba(255,255,255,0.5);
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+}
+
+.snowflakes {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.snowflake {
+  position: fixed;
+  color: white;
+  font-size: 1.5em;
+}
+
+/* Individual snowflakes with different animations */
+.s1 { left: 10%; animation: fall 10s linear infinite; animation-delay: -9s; }
+.s2 { left: 20%; animation: fall 8s linear infinite; animation-delay: -2s; }
+.s3 { left: 30%; animation: fall 11s linear infinite; animation-delay: -5s; }
+.s4 { left: 40%; animation: fall 9s linear infinite; animation-delay: -7s; }
+.s5 { left: 50%; animation: fall 12s linear infinite; animation-delay: -1s; }
+.s6 { left: 60%; animation: fall 7s linear infinite; animation-delay: -3s; }
+.s7 { left: 70%; animation: fall 10s linear infinite; animation-delay: -6s; }
+.s8 { left: 80%; animation: fall 9s linear infinite; animation-delay: -4s; }
+.s9 { left: 90%; animation: fall 8s linear infinite; animation-delay: -8s; }
+
+@keyframes fall {
+  0% { transform: translateY(-100vh); }
+  100% { transform: translateY(100vh); }
+}  
+  .container {
+    text-align: center;
+    margin-top: 50px;
+    z-index: 1;
+  }
+  
+  .boba-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+    margin: 20px 0;
+    object-fit: cover;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #ff0000;
+    text-shadow: 0 0 10px rgba(255,255,255,0.5);
+  }
+  
+  .christmas-date {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #ff0000;
+    text-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+
+.tree {
+  position: fixed;
+  bottom: 0;
+  width: 300px;
+  height: 500px;
+  z-index: 1;
+}
+
+.tree-left {
+  left: 50px;
+}
+
+.tree-right {
+  right: 50px;
+}
+
+.tree-section {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: solid transparent;
+  border-right: solid transparent;
+  border-bottom: solid #0a5c0a;
+}
+
+.tree-section1 {
+  bottom: 120px;
+  border-left-width: 150px;
+  border-right-width: 150px;
+  border-bottom-width: 160px;
+}
+
+.tree-section2 {
+  bottom: 220px;
+  border-left-width: 125px;
+  border-right-width: 125px;
+  border-bottom-width: 140px;
+}
+
+.tree-section3 {
+  bottom: 300px;
+  border-left-width: 100px;
+  border-right-width: 100px;
+  border-bottom-width: 120px;
+}
+
+.ornament-ball {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.tree-left .ball1 { left: 30%; top: 35%; }
+.tree-left .ball2 { right: 35%; top: 30%; }
+.tree-left .ball3 { left: 40%; top: 45%; }
+.tree-left .ball4 { right: 25%; top: 50%; }
+.tree-left .ball5 { left: 45%; top: 60%; }
+.tree-left .ball6 { right: 40%; top: 65%; }
+.tree-left .ball7 { left: 25%; top: 55%; }
+.tree-left .ball8 { right: 30%; top: 40%; }
+
+/* Right tree ornaments moved up */
+.tree-right .ball1 { left: 35%; top: 30%; }
+.tree-right .ball2 { right: 30%; top: 35%; }
+.tree-right .ball3 { left: 45%; top: 50%; }
+.tree-right .ball4 { right: 35%; top: 45%; }
+.tree-right .ball5 { left: 30%; top: 65%; }
+.tree-right .ball6 { right: 45%; top: 60%; }
+.tree-right .ball7 { left: 40%; top: 40%; }
+.tree-right .ball8 { right: 25%; top: 55%; }
+
+.tree-trunk {
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+width: 60px;
+height: 120px;
+  background: linear-gradient(90deg, #3e2723 10%, #5d4037 50%, #3e2723 90%);
+  border-radius: 5px;
+}
+
+.tree-star {
+    position: absolute;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background: gold;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    animation: starGlow 2s ease-in-out infinite;
+    z-index: 2;
+}
+
+@keyframes starGlow {
+  0%, 100% { 
+      filter: brightness(1) drop-shadow(0 0 10px gold);
+  }
+  50% { 
+      filter: brightness(1.5) drop-shadow(0 0 20px gold);
+  }
+}
+
+.ornament-ball {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  box-shadow: inset -2px -2px 6px rgba(0,0,0,0.3);
+}
+
+/* Enhanced ornament gradients */
+.gold {
+  background: radial-gradient(circle at 30% 30%, #ffd700, #daa520);
+  box-shadow: 0 0 10px rgba(255,215,0,0.5);
+}
+
+.silver {
+  background: radial-gradient(circle at 30% 30%, #f5f5f5, #a9a9a9);
+  box-shadow: 0 0 10px rgba(192,192,192,0.5);
+}
+
+.red {
+  background: radial-gradient(circle at 30% 30%, #ff1a1a, #cc0000);
+  box-shadow: 0 0 10px rgba(255,0,0,0.3);
+}
+
+.green {
+  background: radial-gradient(circle at 30% 30%, #00ff00, #008000);
+  box-shadow: 0 0 10px rgba(0,255,0,0.3);
+}
+  
